@@ -1,7 +1,7 @@
 #!/bin/bash
 # github.com/bahamanuthatch
 # For local install, user is already created 
-# Run with sudo
+# Run as follows: sudo ./install.sh myusername
 
 usr=$1
 
