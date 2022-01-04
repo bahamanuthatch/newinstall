@@ -1,0 +1,6 @@
+#!/bin/bash
+# github.com/bahamanuthatch
+# Run with sudo
+
+usr=$1
+
