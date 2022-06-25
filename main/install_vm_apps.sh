@@ -18,8 +18,8 @@ apt update
 apt dist-upgrade -y
 
 apt install -y brave-browser
-apt install protonvpn-cli
-apt install nordvpn
+apt install -y protonvpn-cli
+apt install -y nordvpn
 sudo apt install --no-install-recommends kloak
 apt install -y kate
 apt install -y geany
