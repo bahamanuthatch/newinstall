@@ -4,7 +4,7 @@
 
 apt update
 apt dist-upgrade -y
-apt autoremove
+apt autoremove -y
 
 apt install -y build-essential
 apt install -y checkinstall
