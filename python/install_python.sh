@@ -3,7 +3,7 @@
 # Install the latest version of python in a virtual environment
 
 # python version
-pyver="3.10.1"
+pyver="3.10.5"
 
 usr=$1
 ncore=$2
