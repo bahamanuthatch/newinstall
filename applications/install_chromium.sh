@@ -2,4 +2,4 @@
 # github.com/bahamanuthatch
 # Run with sudo
 
-apt install chromium-browser
+apt install -y chromium-browser
