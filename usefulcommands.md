@@ -22,3 +22,7 @@
 `git push -u origin master`
 * inc deletions\
 `git commit -a -m . && git push`
+
+# VMs
+* guest additions\
+`sudo apt install build-essential dkms linux-headers-$(uname -r)`\
