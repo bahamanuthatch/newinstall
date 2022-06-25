@@ -25,4 +25,4 @@
 
 # VMs
 * guest additions\
-`sudo apt install build-essential dkms linux-headers-$(uname -r)`\
+`sudo apt install build-essential dkms linux-headers-$(uname -r)`
