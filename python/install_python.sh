@@ -28,7 +28,7 @@ python3.10 -m pip install --upgrade pip
 # install virtualenv
 pip3.10 install virtualenv virtualenvwrapper
 stow python$pyshort
-sudo -u scout mkdir /home/$usr/.virtualenvs
+sudo -u $usr mkdir /home/$usr/.virtualenvs
 echo "# Virtualenv settings" >> /home/$usr/.bashrc
 echo "WORKON_HOME=/home/$usr/.virtualenvs" >> /home/$usr/.bashrc
 echo "VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python$pyshort" >> /home/$usr/.bashrc
