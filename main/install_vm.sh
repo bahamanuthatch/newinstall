@@ -26,3 +26,4 @@ cd newinstall
 # software
 cd /home/$usr/scripts_nuthatch/newinstall
 ./main/install_vm_apps.sh $usr
+
