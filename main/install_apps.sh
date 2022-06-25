@@ -14,7 +14,6 @@ cd /home/$usr/scripts_nuthatch/newinstall/applications
 #./install_vivaldi.sh
 ./install_chrome.sh
 ./install_chromium.sh
-./install_srwareiron.sh
 ./install_protonvpncli.sh
 ./install_nordvpn.sh
 ./install_kloak.sh
