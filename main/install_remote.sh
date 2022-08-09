@@ -1,9 +1,11 @@
 #!/bin/bash
 # github.com/bahamanuthatch
 # Enter name of user as first argument
+# Enter python version as second argument
 # Run as root
 
 usr=$1
+pyver=$2
 
 # creation
 groupadd $usr
@@ -37,7 +39,7 @@ cd newinstall
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./keyboard/install_keyboard.sh
-./python/install_python.sh $usr 1
+./python/install_python.sh $usr 1 $pyver
 
 # other directories
 cd /home/$usr/scripts
