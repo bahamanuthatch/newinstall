@@ -2,12 +2,17 @@
 # github.com/bahamanuthatch
 # Install the latest version of python in a virtual environment
 
-# python version
-pyver="3.10.5"
-
 usr=$1
 ncore=$2
-pyshort=${pyver:0:4}
+
+# python version
+pyver=$3
+if [[ "$pyver" =~ "3."[[:digit:]]{2}.* ]]; then
+	nchar=4
+else
+	nchar=3
+fi
+pyshort=${pyver:0:$nchar}
 
 # prepare
 cd /opt
@@ -23,10 +28,10 @@ make -j $ncore
 make altinstall
 cd /usr/local/stow/
 stow python$pyshort
-python3.10 -m pip install --upgrade pip
+python$pyshort -m pip install --upgrade pip
 
 # install virtualenv
-pip3.10 install virtualenv virtualenvwrapper
+pip$pyshort install virtualenv virtualenvwrapper
 stow python$pyshort
 sudo -u $usr mkdir /home/$usr/.virtualenvs
 echo "# Virtualenv settings" >> /home/$usr/.bashrc
