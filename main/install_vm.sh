@@ -1,9 +1,10 @@
 #!/bin/bash
 # github.com/bahamanuthatch
 # For local install, user is already created 
-# Run as follows: sudo ./install.sh myusername
+# Run as follows: sudo ./install.sh myusername mypythonversion
 
 usr=$1
+pyver=$2
 
 # installation
 cd /home/$usr
@@ -19,7 +20,7 @@ chmod +x -R main
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./keyboard/install_keyboard.sh
-./python/install_python.sh $usr 2
+./python/install_python.sh $usr 2 $pyver
 
 # other directories
 
