@@ -14,6 +14,9 @@ apt install -y libncursesw5-dev
 apt install -y libssl-dev
 apt install -y libsqlite3-dev
 apt install -y tk-dev
+systemctl restart ModemManager.service
+systemctl restart networkd-dispatcher.service
+systemctl restart unattended-upgrades.service
 apt install -y libgdbm-dev
 apt install -y libc6-dev
 apt install -y libbz2-dev
@@ -31,7 +34,6 @@ apt install -y gfortran libopenblas-dev liblapack-dev
 apt install -y curl
 apt install -y links htop expect
 apt install -y unzip
-apt install -y chromium-chromedriver
 apt install -y cpu
 apt install -y vnstat
 apt install -y ncdu
