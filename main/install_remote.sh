@@ -28,7 +28,8 @@ systemctl restart sshd
 # installation
 cd /home/$usr
 mkdir scripts
-cd scripts
+mkdir scripts_nuthatch
+cd scripts_nuthatch
 apt update
 apt install git -y
 git clone https://github.com/bahamanuthatch/newinstall.git
