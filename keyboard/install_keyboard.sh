@@ -3,6 +3,9 @@
 # Make keyboard changes
 # overwrites any existing configuration!
 
-\cp ~/scripts_nuthatch/newinstall/keyboard/.Xmodmap ~/.Xmodmap
-xmodmap ~/.Xmodmap
+usr=$1
+home=/home/$usr
+
+cp $home/scripts_nuthatch/newinstall/keyboard/.Xmodmap $home/.Xmodmap
+xmodmap $home/.Xmodmap
 
