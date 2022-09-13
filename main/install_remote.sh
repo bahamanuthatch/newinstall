@@ -38,7 +38,7 @@ cd newinstall
 ./main/install_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
-./keyboard/install_keyboard.sh $usr
+#./keyboard/install_keyboard.sh $usr
 #./python/install_python.sh $usr 1 $pyver
 
 # other directories
