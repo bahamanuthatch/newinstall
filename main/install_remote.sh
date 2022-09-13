@@ -45,4 +45,6 @@ cd /home/$usr/scripts
 mkdir python
 mkdir data
 mkdir files
+chown -R $usr:$usr /home/$usr
+
 
