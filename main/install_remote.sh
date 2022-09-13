@@ -35,10 +35,10 @@ apt install git -y
 git clone https://github.com/bahamanuthatch/newinstall.git
 chown -R $usr:$usr /home/$usr
 cd newinstall
-./main/install_update_remote.sh
+./main/install_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
-./keyboard/install_keyboard.sh
+./keyboard/install_keyboard.sh $usr
 #./python/install_python.sh $usr 1 $pyver
 
 # other directories
