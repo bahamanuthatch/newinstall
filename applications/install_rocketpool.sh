@@ -8,5 +8,5 @@ app=/home/$usr/bin/rocketpool
 mkdir -p /home/$usr/bin
 wget https://github.com/rocket-pool/smartnode-install/releases/latest/download/rocketpool-cli-linux-amd64 -O $app
 chmod +x $app
-su -c "$app service install" $usr
+echo y|su -c "$app service install" $usr
 

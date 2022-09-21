@@ -30,7 +30,7 @@ ufw allow 30303/tcp comment ''
 ufw allow 30303/udp comment ''
 ufw allow 9001/tcp comment ''
 ufw allow 9001/udp comment ''
-ufw enable
+echo y|ufw enable
 echo '[sshd]
 enabled = true
 banaction = ufw

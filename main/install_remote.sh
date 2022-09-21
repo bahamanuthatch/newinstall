@@ -28,7 +28,7 @@ echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
 systemctl restart sshd
 ufw default deny incoming comment 'Deny all incoming traffic'
 ufw allow "22/tcp" comment 'Allow SSH'
-ufw enable
+echo y|ufw enable
 echo '[sshd]
 enabled = true
 banaction = ufw
