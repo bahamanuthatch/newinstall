@@ -1,11 +1,9 @@
 #!/bin/bash
 # github.com/bahamanuthatch
 # Enter name of user as first argument
-# Enter python version as second argument
 # Run as root
 
 usr=$1
-pyver=$2
 
 # creation
 groupadd $usr
@@ -28,6 +26,10 @@ echo "PubkeyAuthentication yes" >> etc/ssh/sshd_config
 systemctl restart sshd
 ufw default deny incoming comment 'Deny all incoming traffic'
 ufw allow "22/tcp" comment 'Allow SSH'
+ufw allow 30303/tcp comment ''
+ufw allow 30303/udp comment ''
+ufw allow 9001/tcp comment ''
+ufw allow 9001/udp comment ''
 ufw enable
 echo '[sshd]
 enabled = true
@@ -49,16 +51,10 @@ apt install git -y
 git clone https://github.com/bahamanuthatch/newinstall.git
 chown -R $usr:$usr /home/$usr
 cd newinstall
-./main/install_update_remote.sh
+./main/install_update_remote2.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
-./python/install_python.sh $usr 1 $pyver
-
-# other directories
-cd /home/$usr/scripts
-mkdir python
-mkdir data
-mkdir files
+./applications/install_rocketpool.sh $usr
 chown -R $usr:$usr /home/$usr
 
 
