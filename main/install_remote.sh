@@ -18,13 +18,13 @@ echo "$usr ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 # security
 apt install -y fail2ban ufw
 cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
-sed -i -e 's/#AuthorizedKeysFile/AuthorizedKeysFile/g' etc/ssh/sshd_config
-sed -i -e 's/ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/g' etc/ssh/sshd_config
-sed -i -e 's/PasswordAuthentication yes/PasswordAuthentication no/g' etc/ssh/sshd_config
-sed -i -e 's/PermitRootLogin yes/PermitRootLogin prohibit-password/g' etc/ssh/sshd_config
-echo "# --- my parameters ---" >> etc/ssh/sshd_config
-echo "AuthenticationMethods publickey" >> etc/ssh/sshd_config
-echo "PubkeyAuthentication yes" >> etc/ssh/sshd_config
+sed -i -e 's/#AuthorizedKeysFile/AuthorizedKeysFile/g' /etc/ssh/sshd_config
+sed -i -e 's/ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/g' /etc/ssh/sshd_config
+sed -i -e 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sed -i -e 's/PermitRootLogin yes/PermitRootLogin prohibit-password/g' /etc/ssh/sshd_config
+echo "# --- my parameters ---" >> /etc/ssh/sshd_config
+echo "AuthenticationMethods publickey" >> /etc/ssh/sshd_config
+echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
 systemctl restart sshd
 ufw default deny incoming comment 'Deny all incoming traffic'
 ufw allow "22/tcp" comment 'Allow SSH'
