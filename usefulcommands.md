@@ -17,10 +17,8 @@
 `ssh -T git@github.com`\
 `git clone git@github.com:bahamanuthatch/myproject.git`
 * usage\
-`git add myfile`\
-`git commit -m "mycomment"`\
-`git push -u origin master`
-* inc deletions\
+`git pull`\
+`git add -A`\
 `git commit -a -m . && git push`
 
 # VMs
