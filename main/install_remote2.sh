@@ -55,6 +55,7 @@ cd newinstall
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./applications/install_rocketpool.sh $usr
+cp -R /root/.ssh /home/$usr
 chown -R $usr:$usr /home/$usr
 
 
