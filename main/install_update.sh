@@ -1,5 +1,5 @@
 #!/bin/bash
-# github.com/tb.net
+# github.com/bahamanuthatch
 # Update and install essential packages
 
 apt update
