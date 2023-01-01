@@ -30,6 +30,12 @@ ufw allow 30303/tcp comment ''
 ufw allow 30303/udp comment ''
 ufw allow 9001/tcp comment ''
 ufw allow 9001/udp comment ''
+ufw allow 8545/tcp comment 'fallback'
+ufw allow 8545/ucp comment 'fallback'
+ufw allow 8546/tcp comment 'fallback'
+ufw allow 8546/udp comment 'fallback'
+ufw allow 5052/tcp comment 'fallback'
+ufw allow 5052/udp comment 'fallback'
 echo y|ufw enable
 echo '[sshd]
 enabled = true
