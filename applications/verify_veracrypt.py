@@ -4,8 +4,8 @@
 import subprocess
 from urllib.request import urlopen
 
-deb_file = 'veracrypt-1.24-Update7-Ubuntu-20.04-amd64.deb'
-sig_file = 'veracrypt-1.24-Update7-sha512sum.txt'
+deb_file = 'veracrypt-1.25.9-Ubuntu-22.04-amd64.deb'
+sig_file = 'veracrypt-1.25.9-sha512sum.txt'
 ct = 0
 
 # get fingerprint from key
