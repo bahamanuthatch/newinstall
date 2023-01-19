@@ -21,8 +21,8 @@ apt install -y brave-browser
 apt install -y protonvpn-cli
 apt install -y nordvpn
 sudo apt install --no-install-recommends kloak
-apt install -y kate
 apt install -y geany
+apt install -y featherpad
 
 ./install_veracrypt.sh
 
