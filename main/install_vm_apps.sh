@@ -12,7 +12,6 @@ cd /home/$usr/scripts_nuthatch/newinstall/applications
 ./install_chromium.sh
 ./install_protonvpncli.sh
 ./install_nordvpn.sh
-./install_kloak.sh
 
 apt update
 apt dist-upgrade -y
@@ -20,7 +19,6 @@ apt dist-upgrade -y
 apt install -y brave-browser
 apt install -y protonvpn-cli
 apt install -y nordvpn
-sudo apt install --no-install-recommends kloak
 apt install -y geany
 apt install -y featherpad
 
