@@ -12,6 +12,7 @@ cd /home/$usr/scripts_nuthatch/newinstall/applications
 ./install_signal.sh
 ./install_chrome.sh
 ./install_chromium.sh
+./install_opera.sh
 ./install_protonvpncli.sh
 ./install_calibre.sh
 
