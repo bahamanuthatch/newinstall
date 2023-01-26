@@ -2,9 +2,16 @@
 # github.com/bahamanuthatch
 # Run with sudo
 
-wget 'https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb'
+usr=$1
 
-apt install -y ./nordvpn-release_1.0.0_all.deb
+wget 'wget https://downloads.nordcdn.com/apps/linux/install.sh'
 
-rm nordvpn-release_1.0.0_all.deb
+chmod +x install.sh
+
+./install.sh
+
+usermod -aG nordvpn $usr
+
+rm install.sh
+
 

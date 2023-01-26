@@ -2,7 +2,7 @@
 # github.com/bahamanuthatch
 # For local install, user is already created
 # move first to ~/scripts_nuthatch/newinstall
-# Run as follows: sudo ./install.sh myusername mypythonversion
+# Run as follows: sudo ./install*.sh myusername mypythonversion
 
 usr=$1
 pyver=$2
@@ -18,4 +18,8 @@ pyver=$2
 
 # software
 cd /home/$usr/scripts_nuthatch/newinstall
-./main/install_apps.sh $usr
+./main/install_vm01_apps.sh $usr
+
+# other
+apt autoremove -y
+

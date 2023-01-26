@@ -15,7 +15,7 @@ apt update
 apt install git -y
 git clone https://github.com/bahamanuthatch/newinstall.git
 cd newinstall
-./main/install_update.sh
+./main/install_local_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./python/install_python.sh $usr 2 $pyver
@@ -26,3 +26,7 @@ cd newinstall
 # software
 cd /home/$usr/scripts_nuthatch/newinstall
 ./main/install_apps.sh $usr
+
+# other
+apt autoremove -y
+
