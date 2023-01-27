@@ -4,7 +4,7 @@
 
 usr=$1
 
-wget 'wget https://downloads.nordcdn.com/apps/linux/install.sh'
+wget https://downloads.nordcdn.com/apps/linux/install.sh
 
 chmod +x install.sh
 

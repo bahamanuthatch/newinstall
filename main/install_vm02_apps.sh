@@ -18,7 +18,6 @@ apt dist-upgrade -y
 
 apt install -y brave-browser
 apt install -y protonvpn-cli
-apt install -y nordvpn
 apt install -y geany
 apt install -y featherpad
 
