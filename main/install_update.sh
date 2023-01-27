@@ -38,3 +38,5 @@ apt install -y ncdu
 apt install -y gnupg
 apt install -y gnupg2
 apt install -y apt-transport-https
+apt install -y git
+
