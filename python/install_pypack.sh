@@ -3,6 +3,7 @@
 # Install python packages
 # Make sure virtualenv is activated
 
+python -m pip install --upgrade pip
 pip install ipython
 pip install arrow
 pip install fernet
