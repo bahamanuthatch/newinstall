@@ -4,7 +4,7 @@
 # Run as follows: sudo ./install*.sh myusername mypythonversion
 
 usr=$1
-pyver=$2
+#pyver=$2
 
 # installation
 cd /home/$usr
