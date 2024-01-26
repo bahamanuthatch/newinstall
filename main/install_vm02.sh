@@ -19,7 +19,7 @@ chmod +x -R main
 ./main/install_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
-./python/install_python.sh $usr 2 $pyver
+#./python/install_python.sh $usr 2 $pyver
 
 # other directories
 
