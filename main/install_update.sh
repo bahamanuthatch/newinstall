@@ -29,7 +29,8 @@ apt install -y libpoppler-cpp-dev
 apt install -y tesseract-ocr
 apt install -y gfortran libopenblas-dev liblapack-dev
 apt install -y curl
-apt install -y links htop expect
+apt install -y links
+apt instlal -y expect
 apt install -y unzip
 #apt install -y chromium-chromedriver
 apt install -y cpu
@@ -38,5 +39,8 @@ apt install -y ncdu
 apt install -y gnupg
 apt install -y gnupg2
 apt install -y apt-transport-https
+apt install -y net-tools
+apt install -y htop
+apt install -y openvpn
 apt install -y git
 

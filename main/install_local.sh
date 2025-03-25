@@ -4,7 +4,7 @@
 # Run as follows: sudo ./install.sh myusername mypythonversion
 
 usr=$1
-pyver=$2
+#pyver=$2
 
 # installation
 cd /home/$usr
@@ -18,14 +18,15 @@ cd newinstall
 ./main/install_local_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
-./python/install_python.sh $usr 2 $pyver
+#./conky/install_conky.sh $usr
+#./python/install_python.sh $usr 2 $pyver
 
 # other directories
 
 
 # software
 cd /home/$usr/scripts_nuthatch/newinstall
-./main/install_apps.sh $usr
+./main/install_local_apps.sh $usr
 
 # other
 apt autoremove -y
