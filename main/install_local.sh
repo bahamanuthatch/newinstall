@@ -14,7 +14,7 @@ apt update
 apt install git -y
 git clone https://github.com/bahamanuthatch/newinstall.git
 cd newinstall
-./main/install_local_update.sh
+./main/install_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 cp -R scripts /home/$usr
