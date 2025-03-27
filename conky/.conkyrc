@@ -31,8 +31,7 @@ ${font DejaVu Sans:size=32}${time %A, %B} ${execi 50 ~/scripts/bash/ordinal.sh}$
 ${voffset 0}
 ${offset 60}${font DejaVu Sans:size=64}${time %H:%M}${font}
 ${voffset 0}
-${offset 60}${color grey}ISP:${color} ${execi 300 curl -s ipinfo.io/org | head -n 1}
-${voffset 0}
+${offset 60}${color grey}ISP:${color}   ${execi 300 curl -s ipinfo.io/org | head -n 1}
 ${offset 60}${color grey}DNS:${color} ${execi 300 ~/scripts/bash/dnsleaktest.sh | tail -n 1 | xargs ~/scripts/bash/numbertostring.sh}
 ${voffset 0}
 ${offset 60}${color orange}CPU Temp:   ${hwmon 2 temp 2}°C${color}
