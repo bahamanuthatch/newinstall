@@ -1,0 +1,36 @@
+# basic help
+
+
+# cpu temperature
+
+The line ${hwmon 0 temp 1} fetches the temperature from your hardware monitor. However, the exact path (0 temp 1) depends on your system.
+
+To find the correct path:
+Run sensors again to identify your CPU temperature sensor (e.g., coretemp-isa-0000).
+
+Check the /sys/class/hwmon/ directory:
+
+ls /sys/class/hwmon/
+
+You’ll see folders like hwmon0, hwmon1, etc.
+
+Look for a temp1_input file in one of these folders:
+
+cat /sys/class/hwmon/hwmon0/temp1_input
+
+If it shows a value (e.g., 45000 = 45°C), note the folder number (e.g., hwmon0 = 0).
+
+Update the hwmon 0 temp 1 part in your .conkyrc file to match (e.g., hwmon 1 temp 1 if it’s in hwmon1).
+
+
+# autostart
+
+Go to Settings > Session and Startup in the Xubuntu menu.
+Click the Application Autostart tab, then the + button.
+Fill in:
+	Name: Conky
+	Description: System monitor on desktop
+	Command: conky
+	Trigger: On login
+
+
