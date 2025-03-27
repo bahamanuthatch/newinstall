@@ -18,7 +18,7 @@ cd newinstall
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 cp -R scripts /home/$usr
-#./conky/install_conky.sh $usr
+./conky/install_conky.sh $usr
 #./python/install_python.sh $usr 2 $pyver
 
 # other directories

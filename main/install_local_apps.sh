@@ -15,7 +15,6 @@ apt update -y
 apt dist-upgrade -y
 
 apt install -y brave-browser
-apt install --no-install-recommends kloak
 apt install mullvad-browser
 
 apt install -y featherpad
