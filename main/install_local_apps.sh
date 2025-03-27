@@ -19,6 +19,7 @@ apt install --no-install-recommends kloak
 apt install mullvad-browser
 
 apt install -y featherpad
+apt install -y zfsutils-linux
 apt install -y lm-sensors
 sensors-detect --auto
 
