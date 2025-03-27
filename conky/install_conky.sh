@@ -10,7 +10,4 @@ dir=$home/scripts_nuthatch/newinstall
 apt install -y conky-all
 
 \cp $dir/conky/.conkyrc $home/.conkyrc
-chown -R $usr:$usr $home
-
-conky & 
 

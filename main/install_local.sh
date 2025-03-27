@@ -8,7 +8,6 @@ usr=$1
 
 # installation
 cd /home/$usr
-mkdir scripts
 mkdir scripts_nuthatch
 cd scripts_nuthatch
 apt update
@@ -18,6 +17,7 @@ cd newinstall
 ./main/install_local_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
+cp -R scripts /home/$usr
 #./conky/install_conky.sh $usr
 #./python/install_python.sh $usr 2 $pyver
 
@@ -29,5 +29,6 @@ cd /home/$usr/scripts_nuthatch/newinstall
 ./main/install_local_apps.sh $usr
 
 # other
+chown -R $usr:$usr /home/$usr
 apt autoremove -y
 

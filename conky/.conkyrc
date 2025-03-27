@@ -1,0 +1,42 @@
+conky.config = {
+    alignment = 'top_right',           -- Position on screen (adjust as needed)
+    background = false,                -- No background process
+    border_width = 0,                  -- No borders
+    cpu_avg_samples = 2,               -- Smooth CPU readings
+    default_color = 'white',           -- Text color (adjust to contrast with wallpaper)
+    draw_borders = false,              -- No borders around text
+    draw_graph_borders = false,        -- No graph borders
+    draw_outline = false,              -- No text outline
+    draw_shades = false,               -- No text shadows
+    double_buffer = true,              -- Reduces flicker on Xfce
+    font = 'DejaVu Sans:size=14',      -- Font (adjust size or type as desired)
+    gap_x = 50,                        -- Distance from right edge
+    gap_y = 50,                        -- Distance from top edge
+    minimum_height = 5, minimum_width = 5, no_buffers = true,                 -- Don’t cache text
+    out_to_console = false,
+    own_window = true,                 -- Conky has its own window
+    own_window_class = 'Conky',        -- Window class for identification
+    own_window_type = 'desktop',       -- Key: Places Conky on the desktop layer
+    own_window_transparent = true,     -- Transparent background
+    own_window_argb_visual = true,     -- Enables true transparency (if supported)
+    own_window_argb_value = 0,         -- Fully transparent (0-255 scale)
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager', -- Desktop behavior
+    update_interval = 1.0,             -- Refresh every second
+    uppercase = false,
+    use_xft = true,                    -- Anti-aliased fonts
+}
+
+conky.text = [[
+${font DejaVu Sans:size=32}${time %A, %B} ${execi 50 ~/scripts/bash/ordinal.sh}${font}
+${voffset 0}
+${offset 60}${font DejaVu Sans:size=64}${time %H:%M}${font}
+${voffset 0}
+${offset 60}${color grey}ISP:${color} ${execi 3500 curl -s ipinfo.io/org | head -n 1}
+${voffset 0}
+${offset 60}${color orange}CPU Temp:   ${hwmon 2 temp 2}°C${color}
+${offset 60}${color grey}CPU Use:${color}      ${cpu cpu0}%
+${offset 60}${color grey}Mem Use:${color}     ${memperc}%
+${offset 60}${color grey}SSD Free:${color}     ${fs_free}
+]]
+
+
